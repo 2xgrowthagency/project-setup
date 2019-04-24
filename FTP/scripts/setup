@@ -1,0 +1,39 @@
+#!/bin/bash
+
+### Configurations
+FTP_URL="ftp.hostgator.com/public_html/example.com/"
+
+# Set FTP URL
+git config git-ftp.url $FTP_URL
+
+# Ask the user for their username and password
+printf "\n"
+echo "--------------------------------------"
+echo "Git FTP Setup for EXAMPLE.com"
+echo "--------------------------------------"
+printf "\n"
+
+echo "Enter the FTP username for ftp.hostgator.com:"
+read ftp_username
+git config git-ftp.user $ftp_username
+printf "\n"
+echo "Enter the FTP password:"
+read ftp_password
+git config git-ftp.password $ftp_password
+
+printf "\n"
+echo "---------------------------------"
+echo "Git FTP configurations are saved!"
+echo "---------------------------------"
+printf "\n"
+echo "To get started, here are some useful commands:"
+printf "\n"
+echo "  Use 'git ftp catchup' to download latest changes"
+echo "  Use 'git ftp push' to deploy your commited changes"
+echo "  Use flag '-D' or '--dry-run' to test commands without uploading/downloading (e.g. 'git ftp catchup --dry-run')"
+echo "  Use flag '-v' to see verbose details (e.g. 'git ftp catchup -v')"
+printf "\n"
+echo "For more commands, see:"
+echo "https://github.com/git-ftp/git-ftp/blob/master/man/git-ftp.1.md"
+printf "\n"
+

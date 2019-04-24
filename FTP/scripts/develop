@@ -1,0 +1,9 @@
+#!/bin/sh
+
+printf "\n"
+echo "-------------------------"
+echo "Starting PROJECT build assets"
+echo "-------------------------"
+printf "\n"
+
+(cd sass && bundle exec jekyll serve --host localhost --baseurl /420)

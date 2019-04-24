@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ "$#" == 0 ];then
+  git subtree push --prefix sass origin gh-pages;
+  git ftp push;
+else
+  if [ "$1" == "-d" ] || [ "$1" == "-D" ] || [ "$1" == "--dry-run" ];then
+    git ftp push -D
+  else
+    echo "Sorry, flag not recongized";
+  fi
+  exit;
+fi
