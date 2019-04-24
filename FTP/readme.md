@@ -25,3 +25,7 @@ This folder contains the scripts and set up instructions for connecting to a hos
 6) Copy the scripts found from the /scripts/ folder to your local directory, then modify the FTP URL found under `scripts/setup`
 7) Run `scripts/setup` to save your FTP credentials
 8) You can now run `scripts/deploy` to push to Github Pages
+
+### Local Development Setup
+
+_In progress_
