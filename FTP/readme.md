@@ -1,15 +1,17 @@
-# Setting up a new project via FTP, and deploy to Github Pages
+# Set up
+
+This folder contains the scripts and set up instructions for connecting to a hosting provide using FTP, then deploying to Githug Pages (while syncing files with the remote FTP server). Modifications can be made to deploy a different location.
 
 **Requirements**
 
-- Hosting account access
+- Hosting account access (A2, Hostgator, etc.)
 - FTP credentials
   - FTP URL
   - Port
   - Username
   - Password
-- FTP client (such as [Filezilla](https://filezilla-project.org/) or [CyberDuck](https://cyberduck.io/)
-- Git FTP ([overview](https://github.com/git-ftp/git-ftp)|[installation](https://github.com/git-ftp/git-ftp/blob/master/INSTALL.md))
+- FTP client (such as [Filezilla](https://filezilla-project.org/) or [CyberDuck](https://cyberduck.io/))
+- Git FTP (see [overview](https://github.com/git-ftp/git-ftp) and [installation](https://github.com/git-ftp/git-ftp/blob/master/INSTALL.md))
 ---
 
 ### Steps 
